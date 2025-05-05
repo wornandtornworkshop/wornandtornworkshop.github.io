@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Worn and Torn Workshop @ ISWC 2025</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem;
+      background: #f9f9f9;
+      color: #222;
+    }
+    h1, h2, h3 {
+      color: #1a1a1a;
+    }
+    nav ul.navbar {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      padding: 0.5rem;
+      margin: 1.5rem 0;
+      background-color: #e6f0f7;
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+    .navbar li {
+      margin: 0 1rem;
+    }
+    .navbar a {
+      text-decoration: none;
+      color: #0077cc;
+      font-weight: bold;
+      padding: 0.5rem;
+      transition: color 0.2s ease-in-out;
+    }
+    .navbar a:hover {
+      color: #004a99;
+      text-decoration: underline;
+    }
+    .header-image {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 2rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    section {
+      margin-bottom: 2rem;
+    }
+    ul {
+      padding-left: 1.2rem;
+    }
+    time {
+      font-weight: bold;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9em;
+      color: #666;
+      margin-top: 4rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Worn and Torn: Retrospectives and Lessons Learned from Fielding Research Systems</h1>
+    <p><strong>Ubicomp/ISWC 2025 Workshop</strong></p>
+  </header>
+
+  <nav>
+    <ul class="navbar">
+      <li><a href="#overview">Overview</a></li>
+      <li><a href="#topics">Topics</a></li>
+      <li><a href="#format">Format</a></li>
+      <li><a href="#agenda">Agenda</a></li>
+      <li><a href="#call">Call for Participation</a></li>
+    </ul>
+  </nav>
+  <img src="WorkshopHeader.png" alt="Worn and Torn Workshop Header Image" class="header-image">
+  <section id="overview">
+    <h2>Overview</h2>
+    <p>
+      Hardware-based sensing systems are essential for collecting activity, communications, and health data during research projects. Despite their importance, traditional publications rarely warrant extended discussion on design processes or methods.
+    </p>
+    <p>
+      For over a decade, researchers from Georgia Tech have built and deployed bespoke systems in real-world environments. These devices have been baked in the sun, submerged in the ocean, chewed by muskrats, and bashed by otters. This workshop continues the legacy of the 2015 “Wear and Tear” workshop with “Worn and Torn,” a space to share lessons, failures, and successes.
+    </p>
+  </section>
+
+  <section id="topics">
+    <h2>Workshop Topic Areas</h2>
+    <p>
+    In this workshop, members of the research community will share their unique field-deployed/deployable hardware systems, processes for designing solutions to the unique constraints their systems face, and their lessons learned from failed prototypes. This workshop will distill multidisciplinary information from across the Ubicomp and ISWC communities to expand the knowledge and capabilities of hardware developers working at research-scale. While the majority of our programming will draw from accepted 1-page extended abstract submissions, we will welcome attendance from the entire Ubicomp/ISWC community as an open-workshop.
+    </p>
+    <ul>
+      <li><strong>Research Scale Prototyping:</strong> Techniques for low-volume, budget-sensitive development.</li>
+      <li><strong>Multidisciplinary Usability:</strong> Designing for unique user groups including animals and scientists.</li>
+      <li><strong>Ruggedization:</strong> Building for extreme environments and destructive use cases.</li>
+      <li><strong>Accessibility:</strong> Strategies for affordability and reproducibility.</li>
+      <li><strong>Hardware on Soft Users:</strong> Making wearables for nontraditional users and tasks.</li>
+      <li><strong>Scalable Leave-behind Systems:</strong> Designing long-term remote deployments.</li>
+      <li><strong>Communities of Practice:</strong> Strengthening field hardware research communities.</li>
+    </ul>
+  </section>
+
+  <section id="format">
+    <h2>Workshop Format</h2>
+    <ul>
+      <li><strong>Lightning Talks:</strong> Fast-paced 7-minute talks with rich visuals. (~4 rounds)</li>
+      <li><strong>Breakout Discussions:</strong> Small group discussions around presenter topics + demos.</li>
+      <li><strong>Field Guide Zine:</strong> Collaborative creation of a visual, physical zine capturing key insights and systems.</li>
+    </ul>
+  </section>
+
+  <section id="agenda">
+    <h2>Agenda</h2>
+    <ul>
+      <li><time>08:30</time> — Kick-off: "Forty Years of Hardware Challenges", Prof. Thad Starner</li>
+      <li><time>08:50</time> — Lightning Talks #1</li>
+      <li><time>09:25</time> — Discussion Break-out #1</li>
+      <li><time>09:55</time> — Lightning Talks #2</li>
+      <li><time>10:30</time> — Discussion Break-out #2 + Refreshments</li>
+      <li><time>11:00</time> — Lightning Talks #3</li>
+      <li><time>11:30</time> — Discussion Break-out #3</li>
+      <li><time>12:00</time> — Lunch</li>
+      <li><time>13:30</time> — Lightning Talks #4</li>
+      <li><time>14:05</time> — Discussion Break-out #4</li>
+      <li><time>14:30</time> — Afternoon Break</li>
+      <li><time>14:45</time> — Zine Introduction & Instructions</li>
+      <li><time>15:00</time> — Collaborative Zine Building</li>
+      <li><time>16:50</time> — Wrap-Up Discussion</li>
+      <li><time>17:00</time> — End</li>
+    </ul>
+  </section>
+
+  <section id="call">
+    <h2>Call for Participation</h2>
+    <p>
+      We welcome submissions from researchers working on field-deployed, ruggedized, or bespoke research systems. Submitters will present a lightning talk and participate in breakout discussions. Selected projects will also be included in our field guide zine.
+    </p>
+    <p>
+      <strong>Submission Deadline:</strong> TBD<br>
+      <strong>Notification of Acceptance:</strong> TBD<br>
+      <strong>Submit via:</strong> [Submission link goes here]
+    </p>
+    <p>
+      📄 <a href="WornAndTorn_CFP.pdf" download="WornAndTorn_CFP.pdf">Download the Call for Participation (PDF)</a>
+    </p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Worn and Torn Workshop | ISWC 2025</p>
+    <p>📧 <a href="mailto:wornandtorn@iswc2025.org">wornandtorn@iswc2025.org</a></p>
+  </footer>
+</body>
+</html>
