@@ -48,6 +48,43 @@
       margin-bottom: 2rem;
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     }
+    .organizer-cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: center;
+    }
+    .organizer-card {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      padding: 1rem;
+      max-width: 280px;
+      flex: 1 1 220px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .organizer-card h3 {
+      margin: 0 0 0.5rem 0;
+      font-size: 1.1rem;
+      color: #1a1a1a;
+    }
+    .organizer-card p {
+      margin: 0.2rem 0;
+      color: #333;
+      font-size: 0.95rem;
+      line-height: 1.4;
+    }
+    .organizer-card a {
+      color: #0077cc;
+      text-decoration: none;
+      font-size: 0.9rem;
+      word-break: break-all;
+    }
+    .organizer-card a:hover {
+      text-decoration: underline;
+    }
     section {
       margin-bottom: 2rem;
     }
@@ -66,11 +103,10 @@
   </style>
 </head>
 <body>
-  <header>
-    <h1>Worn and Torn: Retrospectives and Lessons Learned from Fielding Research Systems</h1>
-    <p><strong>Ubicomp/ISWC 2025 Workshop</strong></p>
-  </header>
-
+<header style="text-align: center;">
+  <h1>Worn and Torn: Retrospectives and Lessons Learned from Fielding Research Systems</h1>
+  <h2 style="margin-top: -0.5rem; color: #555; font-weight: normal;">A Ubicomp/ISWC 2025 Workshop</h2>
+</header>
   <nav>
     <ul class="navbar">
       <li><a href="#overview">Overview</a></li>
@@ -164,7 +200,41 @@
       📄 <a href="WornAndTorn_CFP.pdf" download="WornAndTorn_CFP.pdf">Download the Call for Participation (PDF)</a>
     </p>
   </section>
-
+  <section id="organizers">
+    <h2>Workshop Organizers</h2>
+    <div class="organizer-cards">
+      <div class="organizer-card">
+        <h3>Charles Ramey</h3>
+        <p>Georgia Institute of Technology</p>
+        <p>Atlanta, Georgia, USA</p>
+        <a href="mailto:Charles.Ramey@gatech.edu">Charles.Ramey@gatech.edu</a>
+      </div>
+      <div class="organizer-card">
+        <h3>Scott M. Gilliland</h3>
+        <p>Georgia Institute of Technology</p>
+        <p>Atlanta, Georgia, USA</p>
+        <a href="mailto:Scott.Gilliland@gatech.edu">Scott.Gilliland@gatech.edu</a>
+      </div>
+      <div class="organizer-card">
+        <h3>Eric Greenlee</h3>
+        <p>Georgia Institute of Technology</p>
+        <p>Atlanta, Georgia, USA</p>
+        <a href="mailto:Eric.Greenlee@gatech.edu">Eric.Greenlee@gatech.edu</a>
+      </div>
+      <div class="organizer-card">
+        <h3>Blaine Rothrock</h3>
+        <p>Northwestern University</p>
+        <p>Evanston, Illinois, USA</p>
+        <a href="mailto:blaine@northwestern.edu">blaine@northwestern.edu</a>
+      </div>
+      <div class="organizer-card">
+        <h3>Noah Posner</h3>
+        <p>Georgia Institute of Technology</p>
+        <p>Atlanta, Georgia, USA</p>
+        <a href="mailto:noah.posner@ipat.gatech.edu">noah.posner@ipat.gatech.edu</a>
+      </div>
+    </div>
+  </section>
   <footer>
     <p>&copy; 2025 Worn and Torn Workshop | Ubicomp/ISWC 2025</p>
     <p>📧 <a href="mailto: wornandtornworkshop@gmail.com">wornandtornworkshop@gmail.com</a></p>
