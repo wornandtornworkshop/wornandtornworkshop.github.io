@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Worn and Torn Workshop @ ISWC 2025</title>
+  <title>Worn and Torn Workshop @ Ubicomp/ISWC 2025</title>
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
   <style>
     body {
@@ -48,6 +48,43 @@
       margin-bottom: 2rem;
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     }
+    .organizer-cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: center;
+    }
+    .organizer-card {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      padding: 1rem;
+      max-width: 280px;
+      flex: 1 1 220px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .organizer-card h3 {
+      margin: 0 0 0.5rem 0;
+      font-size: 1.1rem;
+      color: #1a1a1a;
+    }
+    .organizer-card p {
+      margin: 0.2rem 0;
+      color: #333;
+      font-size: 0.95rem;
+      line-height: 1.4;
+    }
+    .organizer-card a {
+      color: #0077cc;
+      text-decoration: none;
+      font-size: 0.9rem;
+      word-break: break-all;
+    }
+    .organizer-card a:hover {
+      text-decoration: underline;
+    }
     section {
       margin-bottom: 2rem;
     }
@@ -66,11 +103,10 @@
   </style>
 </head>
 <body>
-  <header>
-    <h1>Worn and Torn: Retrospectives and Lessons Learned from Fielding Research Systems</h1>
-    <p><strong>Ubicomp/ISWC 2025 Workshop</strong></p>
-  </header>
-
+<header style="text-align: center;">
+  <h1>Worn and Torn: Retrospectives and Lessons Learned from Fielding Research Systems</h1>
+  <h2 style="margin-top: -0.5rem; color: #555; font-weight: normal;">A Ubicomp/ISWC 2025 Workshop</h2>
+</header>
   <nav>
     <ul class="navbar">
       <li><a href="#overview">Overview</a></li>
@@ -80,14 +116,26 @@
       <li><a href="#call">Call for Participation</a></li>
     </ul>
   </nav>
+  <p>
+    In this workshop, we will gather researchers from across the Ubicomp and ISWC communities to discuss how we build the devices, systems, and test setups that enable scientific studies in the field. We encourage participants to divulge their missteps and lessons learned, showcase their clever hacks, and share their favorite tools and products.
+  </p>
+  <p>
+    This workshop will distill multidisciplinary information to expand the knowledge and capabilities of hardware developers working at research-scale. While the majority of our workshop schedule will draw from accepted 1-page extended abstract submissions, we welcome participation from the entire Ubicomp/ISWC community as an open-workshop.
+  </p>
   <img src="WorkshopHeader.png" alt="Worn and Torn Workshop Header Image" class="header-image">
   <section id="overview">
-    <h2>Overview</h2>
+    <h2>Motivation</h2>
     <p>
-      Hardware-based sensing systems are essential for collecting activity, communications, and health data during research projects. Despite their importance, traditional publications rarely warrant extended discussion on design processes or methods.
+      Researchers from the Ubicomp/ISWC communities frequently work with collaborators from beyond the computer science, HCI, and engineering disciplines. These interdisciplinary research partnerships provide members of our community with opportunities to expand our research scope beyond the traditional paradigms and equip our collaborators with tools and systems which are tailored to their study constraints and research goals.
     </p>
     <p>
-      For over a decade, researchers from Georgia Tech have built and deployed bespoke systems in real-world environments. These devices have been baked in the sun, submerged in the ocean, chewed by muskrats, and bashed by otters. This workshop continues the legacy of the 2015 “Wear and Tear” workshop with “Worn and Torn,” a space to share lessons, failures, and successes.
+      These projects are especially exciting when research studies are conducted in the field where they may experience harsh environments, hostile users, or are deployed  in unsupervised or remote locations. While the hardware systems and data collection techniques are critical to the successful gathering of field research data, the publications resulting from these partnerships often miss the hands-on experience we develop while building and fielding this actual hardware.
+    </p>
+    <p>
+      There are not many venues to publish these experiences. DIY builder venues may not appreciate our narrowly focused requirements, while academic publication is not usually appropriate for the details of these engineering efforts, often only having room for a short description of the final version of the experimental setup. We might spend much of our time ruggedizing equipment for use with animals, ensuring user wear-ability and comfort, or just getting our hardware to survive the duration of a study, but these tasks can often get the least space in a paper.
+    </p>
+    <p>
+      What did we create to perform the study? What did and didn't work? Where did we get the insight for the part that finally saved the day? What combination of hardware from different sources made the difference? What design and testing techniques worked for your specific situation?
     </p>
   </section>
 
@@ -110,7 +158,7 @@
   <section id="format">
     <h2>Workshop Format</h2>
     <ul>
-      <li><strong>Lightning Talks:</strong> Fast-paced 7-minute talks with rich visuals. (~4 rounds)</li>
+      <li><strong>Lightning Talks:</strong> Fast-paced, visually oriented, 7-minute talks. (~4 rounds)</li>
       <li><strong>Breakout Discussions:</strong> Small group discussions around presenter topics + demos.</li>
       <li><strong>Field Guide Zine:</strong> Collaborative creation of a visual, physical zine capturing key insights and systems.</li>
     </ul>
@@ -140,22 +188,56 @@
   <section id="call">
     <h2>Call for Participation</h2>
     <p>
-      We welcome submissions from researchers working on field-deployed, ruggedized, or bespoke research systems. Submitters will present a lightning talk and participate in breakout discussions. Selected projects will also be included in our field guide zine.
+      We welcome submissions from researchers working on ruggedized, or bespoke field-deployed research systems. Accepted submissions will present a lightning talk and participate in breakout discussions. Accepted projects will also be included in our field guide zine.
     </p>
     <p>
-      <strong>Submission Deadline:</strong> TBD<br>
-      <strong>Notification of Acceptance:</strong> TBD<br>
-      <strong>Submit via:</strong> <a href="http://new.precisionconference.com/sigchi">Precision Conference System</a>
-      (From the submissions page, select "SigChi" from the society dropdown, "Ubicomp/ISWC 2025" from the Conference/Journal dropdown, and "Ubicomp/ISWC 2025 Worn and Torn" from the Track Dropdown)
+      <strong>Submission Deadline:</strong> July 4th<br>
+      <strong>Notification of Acceptance:</strong> July 12th<br>
+      <strong>Camera Ready Deadline:</strong> July 26th<br>
+      <strong>Submit via:</strong> [Coming soon!]
     </p>
     <p>
       📄 <a href="WornAndTorn_CFP.pdf" download="WornAndTorn_CFP.pdf">Download the Call for Participation (PDF)</a>
     </p>
   </section>
-
+  <section id="organizers">
+    <h2>Workshop Organizers</h2>
+    <div class="organizer-cards">
+      <div class="organizer-card">
+        <h3>Charles Ramey</h3>
+        <p>Georgia Institute of Technology</p>
+        <p>Atlanta, Georgia, USA</p>
+        <a href="mailto:Charles.Ramey@gatech.edu">Charles.Ramey@gatech.edu</a>
+      </div>
+      <div class="organizer-card">
+        <h3>Scott M. Gilliland</h3>
+        <p>Georgia Institute of Technology</p>
+        <p>Atlanta, Georgia, USA</p>
+        <a href="mailto:Scott.Gilliland@gatech.edu">Scott.Gilliland@gatech.edu</a>
+      </div>
+      <div class="organizer-card">
+        <h3>Eric Greenlee</h3>
+        <p>Georgia Institute of Technology</p>
+        <p>Atlanta, Georgia, USA</p>
+        <a href="mailto:Eric.Greenlee@gatech.edu">Eric.Greenlee@gatech.edu</a>
+      </div>
+      <div class="organizer-card">
+        <h3>Blaine Rothrock</h3>
+        <p>Northwestern University</p>
+        <p>Evanston, Illinois, USA</p>
+        <a href="mailto:blaine@northwestern.edu">blaine@northwestern.edu</a>
+      </div>
+      <div class="organizer-card">
+        <h3>Noah Posner</h3>
+        <p>Georgia Institute of Technology</p>
+        <p>Atlanta, Georgia, USA</p>
+        <a href="mailto:noah.posner@ipat.gatech.edu">noah.posner@ipat.gatech.edu</a>
+      </div>
+    </div>
+  </section>
   <footer>
-    <p>&copy; 2025 Worn and Torn Workshop | ISWC 2025</p>
-    <p>📧 <a href="mailto:wornandtorn@iswc2025.org">wornandtorn@iswc2025.org</a></p>
+    <p>&copy; 2025 Worn and Torn Workshop | Ubicomp/ISWC 2025</p>
+    <p>📧 <a href="mailto: wornandtornworkshop@gmail.com">wornandtornworkshop@gmail.com</a></p>
   </footer>
 </body>
 </html>
